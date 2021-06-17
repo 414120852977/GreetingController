@@ -1,9 +1,16 @@
 package com.example.demo;
 
+
+
 public class Greeting {
+	
 	private final String message;
 	private final long id;
 
+	public Greeting() {
+		id = 0;
+		message= "";
+	}
 	public Greeting(long id, String message ) {
 		this.id= id;
 		this.message = message;

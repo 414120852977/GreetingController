@@ -10,6 +10,7 @@ public class GreetingService implements IGreetingService {
 	private final AtomicLong counter = new AtomicLong();
 	private GreetingRepository greetingRepository;
 
+	
 	@Override
 	public Greeting addGreeting(User user) {
 		String message = String.format(template, (user.toString().isEmpty())? "hello World"	: user.toString());	
